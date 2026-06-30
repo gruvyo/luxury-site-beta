@@ -41,6 +41,26 @@ a {
   text-decoration: none;
 }
 
+/* ---- Scroll reveal (only active when JS is on) ---- */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* ---- Small uppercase label ---- */
 .eyebrow {
   font-family: var(--label);
@@ -65,7 +85,20 @@ a {
 
 /* ---- Header / nav ---- */
 .site-header {
-  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* Frosted glass once the page is scrolled */
+.site-header.scrolled {
+  background: rgba(11, 16, 32, 0.72);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom-color: var(--line);
 }
 
 .nav {
@@ -76,6 +109,13 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  transition: padding 0.3s ease;
+}
+
+/* Half the vertical padding when stuck */
+.site-header.scrolled .nav {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .wordmark {

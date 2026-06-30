@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <header class="site-header">
@@ -25,7 +26,7 @@
   <main>
     <!-- ===== Hero + collection rail ===== -->
     <section class="hero">
-      <div class="hero-left">
+      <div class="hero-left reveal">
         <p class="eyebrow"><span class="dot"></span>Private brokerage since 1999</p>
         <h1 class="hero-title">Own the<br /><span class="warm">category.</span></h1>
         <span class="rule"></span>
@@ -33,7 +34,7 @@
         <a class="btn" href="#collection">View the collection <span class="arrow">&rarr;</span></a>
       </div>
 
-      <div class="hero-right" id="collection">
+      <div class="hero-right reveal" id="collection">
         <p class="eyebrow"><span class="dot"></span>The collection</p>
         <p class="collection-lede">Privately curated. Ready to acquire.</p>
         <ul class="domain-list">
@@ -72,7 +73,7 @@
 
     <!-- ===== Stat band ===== -->
     <section class="stats">
-      <div class="stats-inner">
+      <div class="stats-inner reveal">
         <span class="rule wide"></span>
         <div class="stat-grid">
           <div class="stat">
@@ -93,7 +94,7 @@
 
     <!-- ===== Value props ===== -->
     <section class="values" id="approach">
-      <div class="values-inner">
+      <div class="values-inner reveal">
         <h2 class="section-title">A domain is<br /><span class="muted-line">not a line item.</span></h2>
         <div class="value-grid">
           <div class="value">
@@ -114,7 +115,7 @@
 
     <!-- ===== Shortlist grid ===== -->
     <section class="shortlist" id="shortlist">
-      <div class="shortlist-inner">
+      <div class="shortlist-inner reveal">
         <div class="shortlist-head">
           <p class="eyebrow"><span class="dot"></span>The shortlist</p>
           <h2 class="section-title small">Hand selected.</h2>
@@ -150,7 +151,7 @@
 
     <!-- ===== Discretion / process ===== -->
     <section class="discretion">
-      <div class="discretion-inner">
+      <div class="discretion-inner reveal">
         <h2 class="section-title">Some acquisitions should<br /><span class="warm">not announce themselves.</span></h2>
         <div class="step-grid">
           <div class="step">
@@ -174,7 +175,7 @@
 
     <!-- ===== Closing CTA ===== -->
     <section class="cta">
-      <div class="cta-inner">
+      <div class="cta-inner reveal">
         <p class="eyebrow center"><span class="dot"></span>Private brokerage, trusted since 1999</p>
         <h2 class="cta-title">Ready when you are.</h2>
         <div class="cta-actions">
@@ -186,7 +187,7 @@
 
     <!-- ===== Newsletter (Netlify form) ===== -->
     <section class="dispatch">
-      <div class="dispatch-inner">
+      <div class="dispatch-inner reveal">
         <div class="dispatch-copy">
           <p class="eyebrow"><span class="dot"></span>The Dispatch</p>
           <p class="dispatch-lede">A short brief from our advisors. Market signals and names worth watching, sent now and then.</p>
@@ -202,7 +203,7 @@
 
     <!-- ===== Contact (Netlify form) ===== -->
     <section class="contact" id="contact">
-      <div class="contact-inner">
+      <div class="contact-inner reveal">
         <div class="contact-copy">
           <p class="eyebrow"><span class="dot"></span>Contact</p>
           <h2 class="section-title small">Start a<br /><span class="warm">conversation.</span></h2>
@@ -260,5 +261,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
