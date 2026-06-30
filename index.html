@@ -3,13 +3,262 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luxury Site Beta</title>
+  <title>The Reserve &mdash; Private Domain Brokerage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="wordmark" href="/">The Reserve</a>
+      <ul class="nav-links">
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="nav-cta" href="#contact">Speak with an advisor</a>
+    </nav>
+  </header>
+
   <main>
-    <h1>Hello</h1>
-    <p>Pipeline check. The real site replaces this.</p>
+    <!-- ===== Hero + collection rail ===== -->
+    <section class="hero">
+      <div class="hero-left">
+        <p class="eyebrow"><span class="dot"></span>Private brokerage since 1999</p>
+        <h1 class="hero-title">Own the<br /><span class="warm">category.</span></h1>
+        <span class="rule"></span>
+        <p class="hero-sub">The world's most iconic brands begin with the right name. Hand selected, advised by the team that has placed more of the internet's defining names than anyone else.</p>
+        <a class="btn" href="#collection">View the collection <span class="arrow">&rarr;</span></a>
+      </div>
+
+      <div class="hero-right" id="collection">
+        <p class="eyebrow"><span class="dot"></span>The collection</p>
+        <p class="collection-lede">Privately curated. Ready to acquire.</p>
+        <ul class="domain-list">
+          <li class="domain-row">
+            <div>
+              <p class="domain-name">meridian<span class="tld">.com</span></p>
+              <p class="domain-meta">8 characters &nbsp;&middot;&nbsp; est. 1994</p>
+            </div>
+            <span class="row-arrow">&rarr;</span>
+          </li>
+          <li class="domain-row">
+            <div>
+              <p class="domain-name">vantage<span class="tld">.com</span></p>
+              <p class="domain-meta">7 characters &nbsp;&middot;&nbsp; est. 1996</p>
+            </div>
+            <span class="row-arrow">&rarr;</span>
+          </li>
+          <li class="domain-row">
+            <div>
+              <p class="domain-name">atlas<span class="tld">.com</span></p>
+              <p class="domain-meta">5 characters &nbsp;&middot;&nbsp; est. 2000</p>
+            </div>
+            <span class="row-arrow">&rarr;</span>
+          </li>
+          <li class="domain-row">
+            <div>
+              <p class="domain-name">signal<span class="tld">.ai</span></p>
+              <p class="domain-meta">6 characters &nbsp;&middot;&nbsp; est. 2017</p>
+            </div>
+            <span class="row-arrow">&rarr;</span>
+          </li>
+        </ul>
+        <a class="view-all" href="#shortlist">View all domains <span class="arrow">&rarr;</span></a>
+      </div>
+    </section>
+
+    <!-- ===== Stat band ===== -->
+    <section class="stats">
+      <div class="stats-inner">
+        <span class="rule wide"></span>
+        <div class="stat-grid">
+          <div class="stat">
+            <p class="stat-num">$2B+</p>
+            <p class="stat-label">Brokered value</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">150+</p>
+            <p class="stat-label">Domain advisors</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">500K+</p>
+            <p class="stat-label">Businesses served</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Value props ===== -->
+    <section class="values" id="approach">
+      <div class="values-inner">
+        <h2 class="section-title">A domain is<br /><span class="muted-line">not a line item.</span></h2>
+        <div class="value-grid">
+          <div class="value">
+            <p class="value-head">Authority</p>
+            <p class="value-body">The name tells the market you lead the category before you say a word.</p>
+          </div>
+          <div class="value">
+            <p class="value-head">Permanence</p>
+            <p class="value-body">Built to last. A name that outlives campaigns, logos, and market cycles.</p>
+          </div>
+          <div class="value">
+            <p class="value-head">Defensibility</p>
+            <p class="value-body">Exclusive rights to the word your market already uses for what you do.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Shortlist grid ===== -->
+    <section class="shortlist" id="shortlist">
+      <div class="shortlist-inner">
+        <div class="shortlist-head">
+          <p class="eyebrow"><span class="dot"></span>The shortlist</p>
+          <h2 class="section-title small">Hand selected.</h2>
+        </div>
+        <div class="card-grid">
+          <a class="card" href="#contact">
+            <p class="card-name">meridian<span class="tld">.com</span></p>
+            <p class="card-cat">Finance</p>
+          </a>
+          <a class="card" href="#contact">
+            <p class="card-name">vantage<span class="tld">.com</span></p>
+            <p class="card-cat">Real estate</p>
+          </a>
+          <a class="card" href="#contact">
+            <p class="card-name">atlas<span class="tld">.com</span></p>
+            <p class="card-cat">Logistics</p>
+          </a>
+          <a class="card" href="#contact">
+            <p class="card-name">signal<span class="tld">.ai</span></p>
+            <p class="card-cat">Artificial intelligence</p>
+          </a>
+          <a class="card" href="#contact">
+            <p class="card-name">harbor<span class="tld">.com</span></p>
+            <p class="card-cat">Fintech</p>
+          </a>
+          <a class="card" href="#contact">
+            <p class="card-name">aurora<span class="tld">.com</span></p>
+            <p class="card-cat">Energy</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Discretion / process ===== -->
+    <section class="discretion">
+      <div class="discretion-inner">
+        <h2 class="section-title">Some acquisitions should<br /><span class="warm">not announce themselves.</span></h2>
+        <div class="step-grid">
+          <div class="step">
+            <p class="step-num">01</p>
+            <p class="step-head">Confidential outreach</p>
+            <p class="step-body">We approach on your behalf. Your interest stays private until you decide otherwise.</p>
+          </div>
+          <div class="step">
+            <p class="step-num">02</p>
+            <p class="step-head">Experienced negotiation</p>
+            <p class="step-body">Decades of placements set the number. You hold the leverage, we do the talking.</p>
+          </div>
+          <div class="step">
+            <p class="step-num">03</p>
+            <p class="step-head">Secure transfer</p>
+            <p class="step-body">Funds and name move through escrow. Nothing changes hands until both sides are protected.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Closing CTA ===== -->
+    <section class="cta">
+      <div class="cta-inner">
+        <p class="eyebrow center"><span class="dot"></span>Private brokerage, trusted since 1999</p>
+        <h2 class="cta-title">Ready when you are.</h2>
+        <div class="cta-actions">
+          <a class="btn" href="#contact">Speak with an advisor <span class="arrow">&rarr;</span></a>
+          <a class="btn ghost" href="#collection">View the collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Newsletter (Netlify form) ===== -->
+    <section class="dispatch">
+      <div class="dispatch-inner">
+        <div class="dispatch-copy">
+          <p class="eyebrow"><span class="dot"></span>The Dispatch</p>
+          <p class="dispatch-lede">A short brief from our advisors. Market signals and names worth watching, sent now and then.</p>
+        </div>
+        <form class="dispatch-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p class="hp"><label>Leave this empty <input name="bot-field" /></label></p>
+          <input class="dispatch-input" type="email" name="email" placeholder="Your email" required />
+          <button class="btn" type="submit">Subscribe <span class="arrow">&rarr;</span></button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Contact (Netlify form) ===== -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <div class="contact-copy">
+          <p class="eyebrow"><span class="dot"></span>Contact</p>
+          <h2 class="section-title small">Start a<br /><span class="warm">conversation.</span></h2>
+          <p class="contact-note">Tell us the name you want or the category you are building in. An advisor replies within one business day.</p>
+        </div>
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hp"><label>Leave this empty <input name="bot-field" /></label></p>
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send message <span class="arrow">&rarr;</span></button>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="wordmark">The Reserve</p>
+        <p class="footer-tag">Private domain brokerage.</p>
+        <a class="footer-email" href="mailto:hello@thereserve.com">hello@thereserve.com</a>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <p class="footer-col-head">Brokerage</p>
+          <a href="#collection">Collection</a>
+          <a href="#shortlist">Shortlist</a>
+          <a href="#approach">Approach</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-head">House</p>
+          <a href="#approach">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#dispatch">The Dispatch</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&copy; 2026 The Reserve. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
