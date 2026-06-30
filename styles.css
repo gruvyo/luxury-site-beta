@@ -1,0 +1,22 @@
+/* Starter stylesheet. Real styles come in Phase 2. */
+:root {
+  --ink: #111;
+  --paper: #faf9f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 8rem 1.5rem;
+}
